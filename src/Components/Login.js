@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Login = (props) => {
     return(
@@ -12,7 +12,7 @@ const Login = (props) => {
                    with an addition fee with a Disney+ Subscription. 
                    As of 25/04/21, the price of Disney+ Bundle will increase by Rss 500.
                </Description>
-               <CTALogoTwo src="/images/cta-logo-two.png"/>
+               <CTALogoTwo src="/images/cta-logo-two.png" alt=""/>
            </CTA>
            <BgImage />
        </Content>
