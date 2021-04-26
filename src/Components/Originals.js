@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectRecommend } from "../features/movie/movieSlice";
+import { selectOriginal } from "../features/movie/movieSlice";
 
-const Recommends = (props) => {
+const Originals = (props) => {
 
-    const movies = useSelector(selectRecommend);
+    const movies = useSelector(selectOriginal);
 
     return (
         <Container>
-            <h4>Recommended for You</h4>
+            <h4>Originals</h4>
             <Content>
                 {movies && 
                     movies.map((movie, key) => (
@@ -21,10 +21,10 @@ const Recommends = (props) => {
                         </Wrap>
                     ))}
             </Content>
-            
         </Container>
     );
 }
+
 
 const Container = styled.div`
     padding: 0 0 26px;
@@ -70,4 +70,4 @@ const Wrap = styled.div`
     }
 `;
 
-export default Recommends;
+export default Originals;
