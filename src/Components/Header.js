@@ -95,7 +95,7 @@ const Header = (props) => {
             <SignOut>
                 <UserImg src={userPhoto} alt={userName} />
                 <DropDown>
-                    <span onClick={handleAuth}>Sign Out</span>
+                    <span onClick={handleAuth}>Sign out</span>
                 </DropDown>
             </SignOut>
         </>
@@ -107,8 +107,8 @@ const Header = (props) => {
 const Nav = styled.nav`
 position: fixed;
 top = 0;
-left:0;
-right:0;
+left: 0;
+right: 0;
 height: 70px;
 background-color: #090b13;
 display: flex;
@@ -128,6 +128,7 @@ display: inline-block;
 font-size: 0;
 img{
     display: block;
+    width: 100%;
 }
 `;
 
@@ -137,6 +138,8 @@ display: flex;
 flex-flow: row nowrap;
 height: 100%;
 justify-content: flex-end;
+margin: 0px;
+padding: 0px;
 position: relative;
 margin-right: auto;
 margin-left: 25px;
@@ -157,6 +160,7 @@ a{
         color: rgb(249,249,249);
         font-size: 13px;
         letter-spacing: 1.42px;
+        line-height: 1.08;
         padding: 2px 0px;
         white-spacing: nowrap;
         position: relative;
@@ -187,15 +191,6 @@ a{
         }
     }
 }
-
-
-
-
-
-@media (max-width: 768px){
-    display: none;
-}
-
 `;
 
 const Login = styled.a`
@@ -235,7 +230,7 @@ opacity: 0;
 `;
 
 const SignOut = styled.div`
-postion: relative;
+position: relative;
 height: 48px;
 width: 48px;
 display: flex;
